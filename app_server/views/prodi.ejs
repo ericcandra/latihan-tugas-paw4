@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td {
+            border: 1px solid salmon;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<h1>Prodi</h1>
+<form action="/prodi/store" method="POST">
+    <div class="mb-3">
+      <label for="nama" class="form-label">Nama Prodi</label>
+      <input type="text" class="form-control" id="nama" name="nama" required placeholder="nama" />
+    </div>
+    <div class="mb-3">
+      <label for="singkatan" class="form-label">Singkatan</label>
+      <input
+        type="text"
+        class="form-control"
+        id="singkatan"
+        name="singkatan"
+        required
+        placeholder="singkatan"
+      />
+    </div>
+    <div class="mb-3">
+        <label for="fakultas" class="form-label">Fakultas_id</label>
+        <input
+          type="text"
+          class="form-control"
+          id="fakultas_id"
+          name="fakultas_id.nama"
+          required
+          placeholder="masukkan id fakultas"
+        />
+      </div>
+      
+    <button type="submit" class="btn btn-primary">Tambah Prodi</button>
+  </form>
+  
+<table class="table table-striped">
+    <tr>
+        <th>Prodi</th>
+        <th>Singkatan</th>
+        <th>Fakultas_id</th>
+    </tr>
+    <% prodi.forEach(data => {%>
+    <tr>
+        <td><%= data.nama %></td>
+        <td><%= data.singkatan %></td>
+        <td><%= data.fakultas_id && data.fakultas_id.nama ? data.fakultas_id.nama : 'belum ada fakultas' %></td>
+    </tr>
+    <% }) %>
+</table> -->
